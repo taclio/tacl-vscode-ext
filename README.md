@@ -1,14 +1,15 @@
-# LSP Example
+# Tacle Extention
 
-Heavily documented sample code for https://code.visualstudio.com/api/language-extensions/language-server-extension-guide
+for detail documentation for https://code.visualstudio.com/api/language-extensions/language-server-extension-guide
 
 ## Functionality
 
-This Language Server works for plain text file. It has the following language features:
+This Language Server works for tacle file. It has the following language features:
 - Completions
-- Diagnostics regenerated on each file change or configuration change
+- Hover
+- Theme
+- Custom Diagonosis
 
-It also includes an End-to-End test.
 
 ## Structure
 
