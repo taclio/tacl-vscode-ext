@@ -1,0 +1,75 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "taclme",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+        {
+            "include": "#comments"
+        }
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+						"name": "keyword.control.yaml",
+						"match": "\\b(actions)\\b"
+					},
+					{
+						"name": "entity.name.type",
+						"match": "\\b(Given|Then|And|variables|datasets)\\b"
+					},
+					{
+						"name": "entity.name.function",
+						"match": "\\b(click|type|fill|assert|focus|press|check|double click|select|right click|mouse move|Screenshot|right_click)\\b"
+					},
+					{
+						"name": "storage.type.function.ts",
+						"match": "\\b(do|on)\\b"
+					},
+					{
+						"name": "entity.name.variable",
+						"match": "\\b(condition|element|value|continueOnFailure|options|title|contains|editable|hidden|visible|available|uncheck|checked|enabled|empty|locator|description|name|steps|scenarios|data|variable)\\b"
+					},
+					{
+						"name": "variable.other.constant",
+						"match": "\\b(Interact|Open|Assert)\\b"
+					},
+					{
+						"name": "variable.other.constant",
+						"match": "(\\$\\(.*\\))"
+					}
+					
+		]
+		},
+		"strings": {
+			"name": "string.quoted.double.yaml",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.yaml",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comments" : {
+            "patterns": [
+                {
+                   "begin": "#",
+                   "end": "$",
+                   "name": "comment.line.double-slash.astra"
+                },
+                {
+                    "begin": "/\\*",
+                    "end" : "\\*/",
+                    "name": "comment.block.astra"
+                }
+             ]
+        }
+	},
+	"scopeName": "source.tacl"
+}

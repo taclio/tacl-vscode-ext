@@ -1,0 +1,37 @@
+[
+	{
+		"label" : "Given",
+		"detail" : "Given keyword",
+		"documentation" : "Given steps are used to describe the initial context of the system - the scene of the scenario. It is typically something that happened in the past."
+	},
+	{
+		"label" : "actions",
+		"detail" : "actions keyword",
+		"documentation" : "actios keyword is used to perform the series for interactions require for given scenrios"
+	},
+	{
+		"label" : "Then",
+		"detail" : "Then keyword",
+		"documentation" : "Then steps are used to describe an expected outcome, or result. The step definition of a Then step should use an assertion to compare the actual outcome (what the system actually does) to the expected outcome (what the step says the system is supposed to do)."
+	},
+	{
+		"label" : "And",
+		"detail" : "And keyword",
+		"documentation" : "If you have successive Givens, Whens, or Thens, you could write: Then"
+	},
+	{
+		"label" : "do",
+		"detail" : "do some interactions",
+		"documentation" : "do perform some interact which work on components or starting test"
+	},
+	{
+		"label" : "click",
+		"detail" : "click function",
+		"documentation" : "click on component by interacting with its given identifier"
+	},
+	{
+		"label" : "type",
+		"detail" : "type function",
+		"documentation" : "type on component by interacting with its given identifier by providing its value"
+	}
+]
