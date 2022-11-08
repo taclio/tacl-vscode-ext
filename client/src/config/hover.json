@@ -2,7 +2,7 @@
 	{
 		"label" : "Given",
 		"detail" : "Given keyword",
-		"documentation" : "Given steps are used to describe the initial context of the system - the scene of the scenario. It is typically something that happened in the past."
+		"documentation" : "This is given"
 	},
 	{
 		"label" : "actions",
@@ -21,8 +21,8 @@
 	},
 	{
 		"label" : "do",
-		"detail" : "do some interactions",
-		"documentation" : "do perform some interact which work on components or starting test"
+		"detail" : "Declares an interaction",
+		"documentation" : "do defines an interaction"
 	},
 	{
 		"label" : "click",

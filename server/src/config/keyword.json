@@ -26,8 +26,8 @@
 	},
 	{
 		"label" : "do",
-		"detail" : "do some interactions",
-		"documentation" : "do perform some interact which work on components or starting test"
+		"detail" : "do keyword",
+		"documentation" : "Do defines an interaction with an HTML element or a page"
 	},
 	{
 		"label" : "click",
