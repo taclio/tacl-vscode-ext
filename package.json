@@ -1,5 +1,5 @@
 {
-	"name": "tacl-sample",
+	"name": "tacl",
 	"description": "A language server example",
 	"author": "Microsoft Corporation",
 	"license": "MIT",
@@ -8,7 +8,7 @@
 		"type": "git",
 		"url": "https://github.com/Microsoft/vscode-extension-samples"
 	},
-	"publisher": "vscode-samples",
+	"publisher": "tacl",
 	"categories": [],
 	"keywords": [
 		"multi-root ready"
@@ -46,9 +46,10 @@
 		},
 		"languages": [
 			{
-			  "id": "yaml",
+			  "id": "tacl",
 			  "extensions": [".tacl"],
-			  "aliases": ["taclyml", "yaml"],
+			  "aliases": ["tacl"],
+			  "icon": {"dark": "./tacl.png", "light": "./tacl.png"},
 			  "configuration": "./language-configuration.json"
 			}
 		  ],
@@ -60,9 +61,9 @@
 		],
 		"grammars": [
 		{
-			"language": "yaml",
+			"language": "tacl",
 			"scopeName": "source.tacl",
-			"path": "./syntaxes/yaml.tmGrammar.json"
+			"path": "./syntaxes/tacl.tmGrammar.json"
 		}
 		]
 	},

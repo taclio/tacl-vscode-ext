@@ -12,7 +12,7 @@ export let documentEol: string;
 export let platformEol: string;
 
 /**
- * Activates the vscode.tacl-sample extension
+ * Activates the vscode.tacl extension
  */
 export async function activate(docUri: vscode.Uri) {
 	// The extensionId is `publisher.name` from package.json

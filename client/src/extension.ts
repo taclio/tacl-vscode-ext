@@ -40,7 +40,7 @@ export function activate(context: ExtensionContext) {
 	// Options to control the language client
 	const clientOptions: LanguageClientOptions = {
 		// Register the server for plain text documents
-		documentSelector: [{ scheme: 'file', language: 'yaml' }],
+		documentSelector: [{ scheme: 'file', language: 'tacl' }],
 		synchronize: {
 			// Notify the server about file changes to '.clientrc files contained in the workspace
 			fileEvents: workspace.createFileSystemWatcher('**/.clientrc')
@@ -55,8 +55,22 @@ export function activate(context: ExtensionContext) {
 		clientOptions
 	);
 
-	languages.registerHoverProvider('yaml', {
+	languages.registerHoverProvider('tacl', {
 		provideHover(document, position, token) {
+			const location = path.dirname(document.uri.fsPath)
+			if(location.endsWith("features")) {
+				console.log("Its a feature file");
+				
+			}
+			else if(location.endsWith("steps")) {
+				console.log("Its a step file");
+			}
+			else if(location.endsWith("elements")) {
+				console.log("Its an elements file");
+			}
+			else if(location.endsWith("data")) {
+				console.log("Its a dataset file");
+			}
 			let return_content = '';
 			const word = document.getText(document.getWordRangeAtPosition(position));
 			hoverDes.forEach(element => {
